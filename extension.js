@@ -1,7 +1,7 @@
 (function () {
 
     // Change this to your GitHub username so you don't have to modify so many things.
-    var fork = "bscBot";
+    var fork = "iExoDe";
 
     // Define our function responsible for extending the bot.
     function extend() {
@@ -46,11 +46,11 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-      botName: "basicBot",
+      botName: "Mobster",
       language: "english",
-      chatLink: "https://rawgit.com/bscBot/source/master/lang/en.json",
-      scriptLink: "https://rawgit.com/bscBot/source/master/basicBot.js",
-      roomLock: false, // Requires an extension to re-load the script
+      chatLink: "https://raw.githubusercontent.com/Yemasthui/basicBot/master/lang/lv-LV.json",
+      scriptLink: "https://rawgit.com/Yemasthui/basicBot/master/basicBot.js",
+      roomLock: true, // Requires an extension to re-load the script
       startupCap: 1, // 1-200
       startupVolume: 0, // 0-100
       startupEmoji: false, // true or false
@@ -59,7 +59,7 @@
       smartSkip: true,
       cmdDeletion: true,
       maximumAfk: 120,
-      afkRemoval: true,
+      afkRemoval: false,
       maximumDc: 60,
       bouncerPlus: true,
       blacklistEnabled: true,
@@ -70,9 +70,9 @@
       maximumCycletime: 10,
       voteSkip: false,
       voteSkipLimit: 10,
-      historySkip: false,
+      historySkip: true,
       timeGuard: true,
-      maximumSongLength: 10,
+      maximumSongLength: 6,
       autodisable: true,
       commandCooldown: 30,
       usercommandsEnabled: true,
@@ -90,7 +90,7 @@
       afkRankCheck: "ambassador",
       motdEnabled: false,
       motdInterval: 5,
-      motd: "Temporary Message of the Day",
+      motd: "Rozes ir sarkanas",
       filterChat: true,
       etaRestriction: false,
       welcome: true,
@@ -99,19 +99,19 @@
       themeLink: null,
       fbLink: null,
       youtubeLink: null,
-      website: null,
+      website: "http://side.lv",
       intervalMessages: [],
       messageInterval: 5,
       songstats: true,
       commandLiteral: "!",
       blacklists: {
-        NSFW: "https://rawgit.com/bscBot/custom/master/blacklists/NSFWlist.json",
-        OP: "https://rawgit.com/bscBot/custom/master/blacklists/OPlist.json",
-        BANNED: "https://rawgit.com/bscBot/custom/master/blacklists/BANNEDlist.json"
+        NSFW: "https://rawgit.com/Yemasthui/basicBot-customization/master/blacklists/NSFWlist.json",
+        OP: "https://rawgit.com/Yemasthui/basicBot-customization/master/blacklists/OPlist.json",
+        BANNED: "https://rawgit.com/Yemasthui/basicBot-customization/master/blacklists/BANNEDlist.json"
       }
     }));
 
     // Start the bot and extend it when it has loaded.
-    $.getScript("https://rawgit.com/bscBot/source/master/basicBot.js", extend);
+    $.getScript("https://rawgit.com/Yemasthui/basicBot/master/basicBot.js", extend);
 
 }).call(this);
