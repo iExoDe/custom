@@ -47,9 +47,9 @@
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
       botName: "Mobster",
-      language: "english",
-      chatLink: "https://raw.githubusercontent.com/Yemasthui/basicBot/master/lang/lv-LV.json",
-      scriptLink: "https://rawgit.com/Yemasthui/basicBot/master/basicBot.js",
+      language: "latviesu",
+      chatLink: "https://raw.githubusercontent.com/bscBot/source/master/lang/lv-LV.json",
+      scriptLink: "https://raw.githubusercontent.com/bscBot/source/master/basicBot.js",
       roomLock: true, // Requires an extension to re-load the script
       startupCap: 1, // 1-200
       startupVolume: 0, // 0-100
@@ -105,13 +105,13 @@
       songstats: true,
       commandLiteral: "!",
       blacklists: {
-        NSFW: "https://rawgit.com/Yemasthui/basicBot-customization/master/blacklists/NSFWlist.json",
-        OP: "https://rawgit.com/Yemasthui/basicBot-customization/master/blacklists/OPlist.json",
-        BANNED: "https://rawgit.com/Yemasthui/basicBot-customization/master/blacklists/BANNEDlist.json"
+        NSFW: "https://raw.githubusercontent.com/bscBot/custom/master/blacklists/NSFWlist.json",
+        OP: "https://raw.githubusercontent.com/bscBot/custom/master/blacklists/OPlist.json",
+        BANNED: "https://raw.githubusercontent.com/bscBot/custom/master/blacklists/BANNEDlist.json"
       }
     }));
 
     // Start the bot and extend it when it has loaded.
-    $.getScript("https://rawgit.com/Yemasthui/basicBot/master/basicBot.js", extend);
+    $.getScript("https://raw.githubusercontent.com/bscBot/source/master/basicBot.js", extend);
 
 }).call(this);
